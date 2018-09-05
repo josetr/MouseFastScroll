@@ -6,8 +6,9 @@ init:
 - git config --global core.autocrlf true
 install:
 - nuget restore
-build:
-  verbosity: minimal
+build_script:
+- msbuild Tvl.VisualStudio.MouseFastScroll.IntegrationTests /t:restore /v:m
+- msbuild Tvl.VisualStudio.MouseFastScroll.IntegrationTests /v:m
 test_script:
 - ps: |
     $unitTestAssembly = "Tvl.VisualStudio.MouseFastScroll.UnitTests\bin\$env:CONFIGURATION\net452\Tvl.VisualStudio.MouseFastScroll.UnitTests.dll"
