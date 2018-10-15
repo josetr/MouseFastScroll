@@ -25,6 +25,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="15.1.192" PrivateAssets="all" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta006" PrivateAssets="all" />
+    <PackageReference Include="VsixTesting.Installer" Version="0.1.36-beta-g2c36f902a0" />
     <PackageReference Include="VSSDK.CoreUtility" Version="11.0.4" />
     <PackageReference Include="VSSDK.Text" Version="11.0.4" />
   </ItemGroup>

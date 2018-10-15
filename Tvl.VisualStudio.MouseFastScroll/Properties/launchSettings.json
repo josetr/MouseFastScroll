@@ -3,6 +3,18 @@
     "Visual Studio Extension": {
       "executablePath": "$(DevEnvDir)devenv.exe",
       "commandLineArgs": "/rootsuffix $(VSSDKTargetPlatformRegRootSuffix) /log"
+    },
+    "Visual Studio Extension 2015": {
+      "executablePath": "$(VsixTestingInstallerPath)",
+      "commandLineArgs": "/ApplicationPath \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\devenv.exe\" /RootSuffix Exp /InstallAndStart \"$(ProjectDir)bin\\$(Configuration)\\net45\\Tvl.VisualStudio.MouseFastScroll.vsix\""
+    },
+    "Visual Studio Extension 2013": {
+      "executablePath": "$(VsixTestingInstallerPath)",
+      "commandLineArgs": "/ApplicationPath \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\devenv.exe\" /RootSuffix Exp /InstallAndStart \"$(ProjectDir)bin\\$(Configuration)\\net45\\Tvl.VisualStudio.MouseFastScroll.vsix\""
+    },
+    "Visual Studio Extension 2012": {
+      "executablePath": "$(VsixTestingInstallerPath)",
+      "commandLineArgs": "/ApplicationPath \"C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\IDE\\devenv.exe\" /RootSuffix Exp /InstallAndStart \"$(ProjectDir)\bin\\$(Configuration)\\net45\\Tvl.VisualStudio.MouseFastScroll.vsix\""
     }
   }
 }
